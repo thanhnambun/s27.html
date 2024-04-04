@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Khi bạn gán một giá trị của một biến cho một biến khác, giá trị của biến gốc được sao chép và gán cho biến mới. Hai biến này hoàn toàn độc lập và thay đổi giá trị của một biến sẽ không ảnh hưởng đến giá trị của biến khác. Đó là tham trị.
+    <br>
+    Khi bạn gán một đối tượng (mảng, đối tượng, hàm) cho một biến, thì giá trị của biến mới sẽ trỏ đến vùng nhớ chứa đối tượng đó. Thay đổi giá trị của biến mới sẽ thay đổi đối tượng ban đầu vì chúng cùng trỏ đến cùng một vùng nhớ. Đó là tham chiếu
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+        let newArr = numbers;
+        newArr.push(8);
+        console.log(newArr);
+        console.log(numbers);
+        console.log("đoạn code này là tham trị do nó gán vào mảng và khi mình tạo mmangr mới và thêm phần tử vào mảng mới thì nó sẽ thay đổi cả giá trị của mảng cũ");
+    </script>
+</body>
+</html>
